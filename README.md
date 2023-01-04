@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+#  Star Wars Table - TypeScript, RestAPI, ReactJS
 
-In the project directory, you can run:
+A single page web application to show how to properly and asynchronously get data (StarWars heroes) from **RestAPI** using **TypeScript** and **Redux-Saga**. I was inspired by Pranjal Bhadu's design of the main button from **Codepen** .
+ 
 
-### `npm start`
+*Built by **SHERA KOSIMI** Copyright © by Shera Kosimi for his personal purposes. You are 100% allowed to use this webapp for both personal and commercial use, but NOT to claim it as your own design and work. A credit to the original author, Shera Kosimi, is of course highly appreciated!*   
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Install the below tools/packages
 
-### `npm test`
+| Serial No | Software         | Version   | Serial No                                                                  |
+| :-------- | :--------------- | :-------- | :------------------------------------------------------------------------- |
+| 1         | Node.js          | >= 6.9.1  | [Install Node.js](https://nodejs.org/en/download/)                         |
+| 2         | npm              | >= 3.10.8 | [Install NPM](https://www.npmjs.com/get-npm)                               |
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+Install list-models with npm to run the website locally
 
-### `npm run build`
+**System setup**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the repo with `git clone [REPO_URL] `
+- Switch to the project's root directory in terminal
+- Install the dependencies by running`npm install`
+- Once, 'npm install' is completed, start the server by running `npm start`
+- It will run the app in the development mode -  http://localhost:3000
+- The page will reload when you make changes
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Base dependencies
 
-### `npm run eject`
+- [redux-saga](https://redux-saga.js.org/) as a state manager.
+- [axios](https://github.com/axios/axios) for networking (HTTP Requests).
+- [MUI](https://mui.com/) for styling the table.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Redux Saga
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Once the components are defined, they are tied to the management of information through the application. For this, **Redux** is implemented with the store-reducer-action structure as usual, however, not only the data is handled through the actions but the success and error responses are also defined by the same form.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Root Saga files and API connection handler**
 
-## Learn More
+When you need communication with a service you have to create a function to manage the operation and grouping according to the kind of reducers inside a **RootSaga.ts** file.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+While the data transfer between the API and the app is working you must use the success and error actions that help you to catch the result of the operation. With this method, you can track the interaction through the redux saga store. This is useful because you can create behaviors based on those states in a quick and simple way
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
+
+- [Shermuhammad Kosimi ](https://github.com/sherakosimi)
