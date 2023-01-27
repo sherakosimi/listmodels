@@ -3,7 +3,7 @@
 
 A single page web application to show how to properly and asynchronously get data (StarWars heroes) from **RestAPI** using **TypeScript** and **Redux-Saga**. I was inspired by Pranjal Bhadu's design of the main button from **Codepen**. A web project was deployed with **Heroku**.
 
-Link - [https://starwars-models.herokuapp.com/](https://starwars-models.herokuapp.com/) 
+Link - [https://starwar-models.herokuapp.com](https://starwar-models.herokuapp.com) 
 
 *Built by **SHERA KOSIMI** Copyright © by Shera Kosimi for his personal purposes. You are 100% allowed to use this webapp for both personal and commercial use, but NOT to claim it as your own design and work. A credit to the original author, Shera Kosimi, is of course highly appreciated!*   
 
